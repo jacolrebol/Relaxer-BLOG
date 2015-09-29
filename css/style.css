@@ -7,6 +7,15 @@
 .cf:after {
     clear: both;
 }
+/* This stops the boxes to break*/
+*{
+-moz-box-sizing: border-box; /* Firexfox */
+-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+box-sizing: border-box; /* IE */
+}
+body {
+  background-color: #f0efef;
+}
 .container {
   width: 70%;
   padding: 20px 30px 20px 50px;
@@ -19,6 +28,7 @@ h1 {
 h2 {
   margin: 0;
   padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 70px;
   font-weight: 600;
   font-size: 20px;
@@ -28,8 +38,20 @@ h2 {
 p {
   font-weight: 300;
   font-size: 15px;
+  color: #606161;
+  font-family: sans-serif;
 }
-img {
+h3 {
+  margin: 0;
+}
+.container a {
+  text-align: right;
+  display: block;
+  color: #121212;
+  font-size: 15px;
+  text-decoration: none;
+}
+article img {
   width: 100%;
 }
 .masthead {
@@ -62,15 +84,92 @@ img {
 .navigation ul li a:hover {
   color: white;
 }
-.categories {
+
+.sidebar {
+  width: 30%;
+  float:left;
+}
+
+.categories h3 {
   background-color: #f0efef;
+  padding: 40px 0 20px 0;
   margin: 0;
+}
+.categories ul  {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #121212;
+  background-color: #f0efef;
+  padding: 0 0 20px 0;
+}
+.categories li a {
+  color: #606161;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 300;
+
+}
+.about p {
+  margin: 0;
+  padding: 20px 20px 20px 0;
+}
+.about a {
+  text-align: left;
+  display: block;
+  text-decoration: none;
+  color: #121212;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .about {
   background-color: #f0efef;
+  padding-bottom: 20px;
 }
 
 .ad_unit {
-  background-color: #f0efef;
+  background-color: white;
+  padding: 10px 0 400px 0;
+  margin: 0 30px 0 0;
+  text-align: center;
+}
+.bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f9e42e;
+  text-align: center;
+  width: 100%;
+  clear: both;
+}
+button {
+  background-color: #033048;
+  color: white;
+  border: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 800;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 38px 10px 38px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 10px;
+}
+.bottom_container h1{
+  margin: 0;
+  padding: 30px 0 30px 0;
+  color: #f9e42e;
+}
+
+.bottom_container {
+  background-color: #121212;
+  height: 200px;
+  text-align: center;
+
 }
