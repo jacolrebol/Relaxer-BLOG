@@ -16,6 +16,7 @@ box-sizing: border-box; /* IE */
 body {
   background-color: #f0efef;
 }
+
 .container {
   width: 70%;
   padding: 20px 30px 20px 50px;
@@ -51,6 +52,24 @@ h3 {
   font-size: 15px;
   text-decoration: none;
 }
+
+.read_more {
+  text-align: right;
+  color: grey;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 300;
+  padding: 0 20px 0 0;
+}
+.read_less {
+  text-align: right;
+  color: grey;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 300;
+  padding: 0 20px 0 0;
+}
+
 article img {
   width: 100%;
 }
