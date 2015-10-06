@@ -1,23 +1,13 @@
 $(document).ready(function(){
 
-$(".more_text").hide();
-$(".read_less").hide();
-
-
-  function revealAnswer() {
-    $(this).hide();
-    $(this).next(".more_text").slideToggle(70);
-    $(".read_less").show();
-  }
-
-  $(".read_more").on("click", revealAnswer)
-
-  function closeAnswer() {
-    $(this).hide();
+  function toggleText() {
+    if($(this).html() == "Read More")
+        $(this).html("Read Less");
+    else
+        $(this).html("Read More");
     $(this).prev(".more_text").slideToggle(70);
-    $(".read_more").show();
   }
 
-  $(".read_less").on("click", closeAnswer)
+  $(".read_more").on("click", toggleText);
 
 });

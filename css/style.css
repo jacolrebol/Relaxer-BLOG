@@ -70,6 +70,10 @@ h3 {
   padding: 0 20px 0 0;
 }
 
+.more_text {
+  display: none;
+}
+
 article img {
   width: 100%;
 }
