@@ -10,4 +10,5 @@ $(document).ready(function(){
 
   $(".read_more").on("click", toggleText);
 
+
 });

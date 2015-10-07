@@ -73,6 +73,9 @@ h3 {
 .more_text {
   display: none;
 }
+.side_more_text {
+  display: none;
+}
 
 article img {
   width: 100%;
